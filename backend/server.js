@@ -1,16 +1,18 @@
-var PORT = process.env.PORT || 3000;
-var ENV = process.env.MONGO_CS || "development";
-
 var express = require("express");
+var dotenv = require("dotenv/config");
 var app = express();
 var server = require("http").createServer(app);
 const path = require("path");
+
+var PORT = process.env.PORT || 3000;
+var ENV = process.env.ENV || "development";
+var MONGO_CS = process.env.MONGO_CS;
 
 // setup deployd
 require("deployd").attach(server, {
   env: ENV,
   db: {
-    connectionString: ENV,
+    connectionString: MONGO_CS,
   },
 });
 
