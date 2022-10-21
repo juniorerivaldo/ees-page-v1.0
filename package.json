@@ -1,0 +1,31 @@
+{
+    "name": "ees-stack-v1.1",
+    "author": "Erivaldo Junior",
+    "version": "1.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build ",
+        "preview": "vite preview"
+    },
+    "devDependencies": {
+        "daisyui": "^2.13.2",
+        "@sveltejs/vite-plugin-svelte": "^1.0.8",
+        "autoprefixer": "^10.4.8",
+        "dotenv": "^16.0.3",
+        "postcss": "^8.4.17",
+        "postcss-load-config": "^4.0.1",
+        "svelte": "^3.50.1",
+        "svelte-check": "^2.9.1",
+        "svelte-navigator": "latest",
+        "svelte-preprocess": "^4.10.7",
+        "tailwindcss": "^3.1.8",
+        "typescript": "^4.8.4",
+        "vite": "^3.1.4",
+        "vite-plugin-singlefile": "^0.12.1"
+    },
+    "engines": {
+        "node": ">= 15.0.0"
+    },
+    "type": "module"
+}
