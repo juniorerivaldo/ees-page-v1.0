@@ -1,5 +1,5 @@
 var PORT = process.env.PORT || 3000;
-var ENV = process.env.NODE_ENV || "development";
+var ENV = process.env.MONGO_CS || "development";
 
 var express = require("express");
 var app = express();
@@ -10,8 +10,7 @@ const path = require("path");
 require("deployd").attach(server, {
   env: ENV,
   db: {
-    connectionString:
-      "mongodb://root:g38ddvnz@ac-izuhjrx-shard-00-00.xn96fal.mongodb.net:27017,ac-izuhjrx-shard-00-01.xn96fal.mongodb.net:27017,ac-izuhjrx-shard-00-02.xn96fal.mongodb.net:27017/test?ssl=true&replicaSet=atlas-bxwx8b-shard-0&authSource=admin&retryWrites=true&w=majority",
+    connectionString: ENV,
   },
 });
 
@@ -23,11 +22,10 @@ app.get("/api", (req, res) => {
 //  res.send({ message: "TESTE" });
 // });
 
-
 // After attach, express can use server.handleRequest as middleware
 app.use(server.handleRequest);
 
 // start server
 server.listen(PORT, () => {
-  console.log('Servidor rodando na porta:', PORT)
+  console.log("Servidor rodando na porta:", PORT);
 });
