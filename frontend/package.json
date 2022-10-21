@@ -9,9 +9,9 @@
         "preview": "vite preview"
     },
     "devDependencies": {
-        "daisyui": "^2.13.2",
         "@sveltejs/vite-plugin-svelte": "^1.0.8",
         "autoprefixer": "^10.4.8",
+        "daisyui": "^2.13.2",
         "dotenv": "^16.0.3",
         "postcss": "^8.4.17",
         "postcss-load-config": "^4.0.1",
@@ -27,5 +27,8 @@
     "engines": {
         "node": ">= 15.0.0"
     },
-    "type": "module"
+    "type": "module",
+    "dependencies": {
+        "axios": "^1.1.3"
+    }
 }

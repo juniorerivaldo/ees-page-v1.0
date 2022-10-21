@@ -2,7 +2,7 @@
   import { Link } from "svelte-navigator";
 </script>
 
-<div class="fixed navbar bg-base-100">
+<div class="navbar bg-base-100 z-40">
   <div class="navbar-start">
     <!-- Hamburguer menu -->
     <div class="dropdown">
@@ -27,7 +27,8 @@
       >
         <li><Link to="/">Inicio</Link></li>
         <li><Link to="About">Sobre</Link></li>
-        <li><Link to="contato">Contato</Link></li>
+        <li><Link to="Contato">Contato</Link></li>
+        <li><Link to="Login">Login</Link></li>
       </ul>
     </div>
     <a class="btn btn-ghost normal-case text-xl">Icone</a>
@@ -35,9 +36,10 @@
 
   <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal p-0">
-      <li><Link to="/">Inicio</Link></li>
+      <li><Link to="Home">Inicio</Link></li>
       <li><Link to="About">Sobre</Link></li>
-      <li><Link to="contato">Contato</Link></li>
+      <li><Link to="Contato">Contato</Link></li>
+      <li><Link to="Login">Login</Link></li>
     </ul>
   </div>
   <div class="navbar-end" />
