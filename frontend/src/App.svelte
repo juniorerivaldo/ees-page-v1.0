@@ -9,14 +9,14 @@
   import axios from "axios";
   import { onMount } from "svelte";
 
-  // onMount(async () => {
-  //   const res = await axios
-  //     .get("http://localhost:3000/users")
-  //     .then(function (response) {
-  //       // handle success
-  //       console.log(response);
-  //     });
-  // });
+  onMount(async () => {
+    const res = await axios
+      .get("http://localhost:3000/users")
+      .then(function (response) {
+        // handle success
+        console.log(response);
+      });
+  });
 </script>
 
 <Router>
@@ -24,7 +24,7 @@
     <Navbar />
   </header>
   <main>
-    <Route path="/Home">
+    <Route path="/">
       <Home />
     </Route>
 

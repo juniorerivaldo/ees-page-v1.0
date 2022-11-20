@@ -36,7 +36,7 @@
 
   <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal p-0">
-      <li><Link to="Home">Inicio</Link></li>
+      <li><Link to="/">Inicio</Link></li>
       <li><Link to="About">Sobre</Link></li>
       <li><Link to="Contato">Contato</Link></li>
       <li><Link to="Login">Login</Link></li>
